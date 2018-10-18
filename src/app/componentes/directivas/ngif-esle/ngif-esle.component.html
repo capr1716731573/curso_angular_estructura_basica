@@ -1,0 +1,26 @@
+<div class="container">
+    <h3>Normal</h3>
+    <label>Nombre y Apellidos</label>
+    <input type="text" class="form-control" placeholder="Ingrese Nombres y Apellidos" [(ngModel)]="nombres">
+    <br>
+    <button type="submit" class="btn btn-primary" *ngIf="nombres; else botonDesactivado">Enviar (Activado)</button>
+    <br>
+    <br>
+    <h3>NgIf Else con eventos o funciones</h3>
+    <label>Cual es la capital de España?</label>
+    <input type="text" class="form-control" placeholder="Por favor asignar, " [(ngModel)]="capital">
+    <p *ngIf="!capital; else correcto">Complete la pregunta</p>
+</div>
+
+
+<ng-template #botonDesactivado>
+    <button type="submit" class="btn btn-success" disabled>Enviar (Desactivado)</button>
+</ng-template>
+
+<ng-template #correcto>
+    <h4 *ngIf="setResultado(); else incorrecto">!!Correcto</h4>
+</ng-template>
+
+<ng-template #incorrecto>
+    <h4>Mal contestado vuelva a intentarlo</h4>
+</ng-template>

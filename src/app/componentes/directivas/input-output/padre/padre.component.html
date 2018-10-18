@@ -1,0 +1,12 @@
+<div class="container">
+    <h2>@Input - @OutPut</h2>
+    <p><strong>@Input: </strong>Sirve para pasar parametros entre componentes</p>
+    <p><strong>@Output: </strong>Sirve para ejecutra eventos entre componentes</p>
+    <br>
+    <h2>Componente Padre</h2>
+    <div class="padre">
+        <app-hijo *ngFor="let avisop of avisos" [aviso]="avisop" (mensajeMarcado)="mostrarMensaje($event)"></app-hijo>
+        <h3 class="text-center"> {{ texto }}</h3>
+    </div>
+
+</div>

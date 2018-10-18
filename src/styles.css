@@ -5,7 +5,7 @@
 }
 
 footer {
-    position: absolute;
+    position: fixed;
     bottom: 0;
     width: 100%;
     height: 50px;
@@ -13,4 +13,97 @@ footer {
 
 .pointer {
     cursor: pointer;
+}
+
+
+/*Clases para probar en ngClass*/
+
+.aprobado {
+    color: white;
+    background-color: green;
+    padding: 10px;
+}
+
+.suspenso {
+    color: white;
+    background-color: red;
+    padding: 10px;
+}
+
+
+/* Clases para probar el Ng Switch */
+
+ul {
+    text-align: center;
+    list-style: none;
+}
+
+.lakers {
+    max-width: 600px;
+    height: 120px;
+    background-image: url("assets/img/LALakers.png");
+    background-position-x: 10px;
+    background-position-y: 10px;
+    background-repeat: no-repeat;
+    border-style: solid;
+    border-width: 5px;
+    border-color: #552582;
+    margin-top: 30px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.celtics {
+    max-width: 600px;
+    height: 120px;
+    background-image: url("assets/img/BostonCeltics.png");
+    background-position-x: 10px;
+    background-position-y: 10px;
+    background-repeat: no-repeat;
+    border-style: solid;
+    border-width: 5px;
+    border-color: #008348;
+    margin-top: 30px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.bulls {
+    max-width: 600px;
+    height: 120px;
+    background-image: url("assets/img/ChicagoBulls.png");
+    background-position-x: 10px;
+    background-position-y: 10px;
+    background-repeat: no-repeat;
+    border-style: solid;
+    border-width: 5px;
+    border-color: #CE1141;
+    margin-top: 30px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.itemOrange {
+    border-left-style: solid;
+    border-width: 5px;
+    border-left-color: orange;
+    padding-left: 10px;
+}
+
+
+/*Clases para ejemplos @Input @Output*/
+
+.padre {
+    border-style: solid;
+    border-width: 2px;
+    border-color: orange;
+    padding: 10px;
+}
+
+.hijo {
+    border-style: solid;
+    border-width: 2px;
+    border-color: violet;
+    padding: 10px;
+}
+
+.tachado {
+    text-decoration: line-through;
 }

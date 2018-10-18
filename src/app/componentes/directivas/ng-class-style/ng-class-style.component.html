@@ -1,0 +1,21 @@
+<div class="container">
+    <h3>Ng Style</h3>
+    <label>Ingrese Calificacion:</label>
+    <input type="text" class="form-control" placeholder="Ingrese Calificacion 1" [(ngModel)]="calificacion">
+    <br>
+    <h4 style="display: inline-block">Puntuacion Obtenida: </h4>
+    <h4 [ngStyle]="{color: setColor()}">{{calificacion}} </h4>
+
+    <h3>Ng Class</h3>
+    <label>Ingrese Calificacion 2:</label>
+    <input type="text" class="form-control" placeholder="Ingrese Calificacion 2" [(ngModel)]="calificacion1">
+    <br>
+    <div *ngIf="calificacion1">
+        <h4 [ngClass]="{aprobado: calificacion1 >=7,
+                       suspenso: calificacion1 < 7}">
+
+            Puntuacion Obtenida:{{ calificacion1 }}
+        </h4>
+    </div>
+
+</div>

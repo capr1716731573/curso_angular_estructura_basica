@@ -19,6 +19,21 @@
                     <a class="dropdown-item" [routerLink]="['twowaybinding']">TwoWay Binding</a>
                 </div>
             </li>
+
+            <li class="nav-item dropdown" routerLinkActive="active">
+                <a class="nav-link dropdown-toggle pointer" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Directivas
+              </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                    <a class="dropdown-item" [routerLink]="['ngif-else']">NgIf-Else</a>
+                    <a class="dropdown-item" [routerLink]="['ngstyle-class']">Ng Style - Ng Class</a>
+                    <a class="dropdown-item" [routerLink]="['ngfor']">Ng For</a>
+                    <a class="dropdown-item" [routerLink]="['ngswitch']">Ng Switch</a>
+                    <a class="dropdown-item" [routerLink]="['directiva-personal']">Directiva Personal</a>
+                    <a class="dropdown-item" [routerLink]="['padre']">@Input-@Output</a>
+
+                </div>
+            </li>
         </ul>
 
     </div>

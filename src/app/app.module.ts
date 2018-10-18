@@ -9,6 +9,16 @@ import { App_Routing } from './app.routes';
 import { PropertyBindingComponent } from './componentes/data-binding/property-binding/property-binding.component';
 import { EventBindingComponent } from './componentes/data-binding/event-binding/event-binding.component';
 import { TwowayBindingComponent } from './componentes/data-binding/twoway-binding/twoway-binding.component';
+import { NgifEsleComponent } from './componentes/directivas/ngif-esle/ngif-esle.component';
+import { NgClassStyleComponent } from './componentes/directivas/ng-class-style/ng-class-style.component';
+import { NgForComponent } from './componentes/directivas/ng-for/ng-for.component';
+import { NgSwitchComponent } from './componentes/directivas/ng-switch/ng-switch.component';
+
+//Directivas
+import { MenuItemDirective } from './directivas/menu-item.directive';
+import { DirectivaPersonalizadaComponent } from './componentes/directivas/directiva-personalizada/directiva-personalizada.component';
+import { HijoComponent } from './componentes/directivas/input-output/hijo/hijo.component';
+import { PadreComponent } from './componentes/directivas/input-output/padre/padre.component';
 
 @NgModule({
   declarations: [
@@ -18,7 +28,15 @@ import { TwowayBindingComponent } from './componentes/data-binding/twoway-bindin
     InterpolacionComponent,
     PropertyBindingComponent,
     EventBindingComponent,
-    TwowayBindingComponent
+    TwowayBindingComponent,
+    NgifEsleComponent,
+    NgClassStyleComponent,
+    NgForComponent,
+    NgSwitchComponent,
+    MenuItemDirective,
+    DirectivaPersonalizadaComponent,
+    HijoComponent,
+    PadreComponent
   ],
   imports: [
     BrowserModule,

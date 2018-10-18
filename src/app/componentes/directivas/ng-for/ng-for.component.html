@@ -1,0 +1,21 @@
+<div class="container">
+    <h3>Ng For</h3>
+    <table class="table table-striped table-bordered">
+        <thead class="bg-success">
+            <tr>
+                <th>Cedula</th>
+                <th>Apellido Paterno</th>
+                <th>Apellido Materno</th>
+                <th>Nombres</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let persona of personas">
+                <td>{{persona.cedula}}</td>
+                <td>{{persona.apellido_paterno}}</td>
+                <td>{{persona.apellido_materno}}</td>
+                <td>{{persona.nombres}}</td>
+            </tr>
+        </tbody>
+    </table>
+</div>
