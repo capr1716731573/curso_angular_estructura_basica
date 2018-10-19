@@ -19,6 +19,9 @@ import { MenuItemDirective } from './directivas/menu-item.directive';
 import { DirectivaPersonalizadaComponent } from './componentes/directivas/directiva-personalizada/directiva-personalizada.component';
 import { HijoComponent } from './componentes/directivas/input-output/hijo/hijo.component';
 import { PadreComponent } from './componentes/directivas/input-output/padre/padre.component';
+import { PipesAngularComponent } from './componentes/pipes/pipes-angular/pipes-angular.component';
+import { ConvertidorPipe } from './pipes/convertidor.pipe';
+import { PipesPersonalizadoComponent } from './componentes/pipes/pipes-personalizado/pipes-personalizado.component';
 
 @NgModule({
   declarations: [
@@ -36,7 +39,10 @@ import { PadreComponent } from './componentes/directivas/input-output/padre/padr
     MenuItemDirective,
     DirectivaPersonalizadaComponent,
     HijoComponent,
-    PadreComponent
+    PadreComponent,
+    PipesAngularComponent,
+    ConvertidorPipe,
+    PipesPersonalizadoComponent
   ],
   imports: [
     BrowserModule,

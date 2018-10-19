@@ -1,0 +1,23 @@
+<div class="container">
+    <h1>Pipes</h1>
+    <p>Se encargan de dar un formato de salida a un valor en nuestra aplicacion</p>
+    <br>
+    <h3>Pipe Fecha</h3>
+    <p>{{ciudad}}, {{ hoy | date:'d-M-y'}} a las {{ hoy | date:'H:m z'}}</p>
+    <h3>Pipe Uppercase</h3>
+    <p>{{ciudad | uppercase}}, {{ hoy | date:'d-M-y'}} a las {{ hoy | date:'H:m z'}}</p>
+    <h3>Pipe Lowercase</h3>
+    <p>{{ciudad | lowercase}}, {{ hoy | date:'d-M-y'}} a las {{ hoy | date:'H:m z'}}</p>
+    <h3>Pipe Percent</h3>
+    <p>ejm: valor--> 18.5 * 56.3 / 9 = {{resultado | percent}}</p>
+    <h3>Pipe Decimal</h3>
+    <p>Pipe decimal ejm: Normal--> 18.5 * 56.3 / 9 = {{resultado}}</p>
+    <!-- Pipe: number 3 parametros 3 numero max de enteros 2 min numero de decimales / 2 max numero decimales  -->
+    <p>Pipe decimal ejm: Con Pipe--> 18.5 * 56.3 / 9 = {{ resultado | number: '3.2-2'}}</p>
+    <h3>Pipe Currency</h3>
+    <p>Resultado en Euros: {{resultado | number: '3.2-2' | currency:'EUR':true}}</p>
+    <p>Resultado en Dolares: {{resultado | number: '3.2-2' | currency}}</p>
+    <h3>Pipe i18nSelect</h3>
+    <p> Encabezado: {{persona.sexo | i18nSelect: encabezamientoPipei18n}} {{persona.nombre}}</p>
+
+</div>

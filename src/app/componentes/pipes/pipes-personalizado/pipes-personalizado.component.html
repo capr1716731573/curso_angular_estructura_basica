@@ -1,0 +1,13 @@
+<div class="container">
+    <h2>Pipe Personalizado</h2>
+    <p>Tranforma el valor ingresado en GIGABYTES a MEGABYTES</p>
+    <br>
+    <!-- Text input-->
+    <div class="form-group">
+        <label class="col-md-4 control-label" for="textinput">GIGABYTES</label>
+        <div class="col-md-4">
+            <input id="textinput" name="textinput" placeholder="Ingrese Valor" class="form-control input-md" type="text" [(ngModel)]="valor">
+        </div>
+    </div>
+    <h3>El valor en Megabytes es: {{valor | convertidor}}</h3>
+</div>

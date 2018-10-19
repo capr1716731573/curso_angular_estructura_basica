@@ -9,6 +9,8 @@ import { NgForComponent } from './componentes/directivas/ng-for/ng-for.component
 import { NgSwitchComponent } from './componentes/directivas/ng-switch/ng-switch.component';
 import { DirectivaPersonalizadaComponent } from './componentes/directivas/directiva-personalizada/directiva-personalizada.component';
 import { PadreComponent } from './componentes/directivas/input-output/padre/padre.component';
+import { PipesAngularComponent } from './componentes/pipes/pipes-angular/pipes-angular.component';
+import { PipesPersonalizadoComponent } from './componentes/pipes/pipes-personalizado/pipes-personalizado.component';
 
 
 const APP_ROUTES: Routes = [
@@ -25,7 +27,15 @@ const APP_ROUTES: Routes = [
     { path: 'ngswitch', component: NgSwitchComponent },
     { path: 'directiva-personal', component: DirectivaPersonalizadaComponent },
     { path: 'padre', component: PadreComponent },
+
+     //Pipes
+    { path: 'pipes_angular', component: PipesAngularComponent },
+    { path: 'pipes_personalizado', component: PipesPersonalizadoComponent },
+
     { path: '**', pathMatch: 'full', redirectTo: 'interpolacion' }
+
+   
+
 ];
 
 
