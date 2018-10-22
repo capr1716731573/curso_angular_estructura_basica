@@ -23,6 +23,11 @@ import { PipesAngularComponent } from './componentes/pipes/pipes-angular/pipes-a
 import { ConvertidorPipe } from './pipes/convertidor.pipe';
 import { PipesPersonalizadoComponent } from './componentes/pipes/pipes-personalizado/pipes-personalizado.component';
 
+
+//Servicios
+import { PersonasService } from './servicios/personas.service';
+import { PersonasComponent } from './componentes/servicios/personas.component';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -42,14 +47,17 @@ import { PipesPersonalizadoComponent } from './componentes/pipes/pipes-personali
     PadreComponent,
     PipesAngularComponent,
     ConvertidorPipe,
-    PipesPersonalizadoComponent
+    PipesPersonalizadoComponent,
+    PersonasComponent
   ],
   imports: [
     BrowserModule,
     FormsModule,
     App_Routing
   ],
-  providers: [],
+  providers: [
+    PersonasService
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

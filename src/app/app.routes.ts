@@ -11,6 +11,7 @@ import { DirectivaPersonalizadaComponent } from './componentes/directivas/direct
 import { PadreComponent } from './componentes/directivas/input-output/padre/padre.component';
 import { PipesAngularComponent } from './componentes/pipes/pipes-angular/pipes-angular.component';
 import { PipesPersonalizadoComponent } from './componentes/pipes/pipes-personalizado/pipes-personalizado.component';
+import { PersonasComponent } from './componentes/servicios/personas.component';
 
 
 const APP_ROUTES: Routes = [
@@ -31,6 +32,9 @@ const APP_ROUTES: Routes = [
      //Pipes
     { path: 'pipes_angular', component: PipesAngularComponent },
     { path: 'pipes_personalizado', component: PipesPersonalizadoComponent },
+
+    //Services
+    { path: 'servicios', component: PersonasComponent },
 
     { path: '**', pathMatch: 'full', redirectTo: 'interpolacion' }
 
