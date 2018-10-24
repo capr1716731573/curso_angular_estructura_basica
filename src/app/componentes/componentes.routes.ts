@@ -12,6 +12,10 @@ import { PadreComponent } from './directivas/input-output/padre/padre.component'
 import { PipesAngularComponent } from './pipes/pipes-angular/pipes-angular.component';
 import { PipesPersonalizadoComponent } from './pipes/pipes-personalizado/pipes-personalizado.component';
 import { PersonasComponent } from './servicios/personas.component';
+import { TemplateDrivenComponent } from './formularios/template-driven/template-driven.component';
+import { ReactiveComponent } from './formularios/reactive/reactive.component';
+import { ObservablesComponent } from './observables-promesas/observables/observables.component';
+import { PromesasComponent } from './observables-promesas/promesas/promesas.component';
 
 const pages_routes: Routes = [
     //DataBindings
@@ -34,6 +38,15 @@ const pages_routes: Routes = [
 
     //Services
     { path: 'servicios', component: PersonasComponent },
+
+    //Formularios 
+    { path: 'form_template_driven', component: TemplateDrivenComponent },
+    { path: 'form_reactive', component: ReactiveComponent },
+
+    //Observables y Promesas
+    { path: 'observables', component: ObservablesComponent },
+    { path: 'promesas', component: PromesasComponent },
+    
     { path: '**', pathMatch: 'full', redirectTo: 'interpolacion' }
 ];
 

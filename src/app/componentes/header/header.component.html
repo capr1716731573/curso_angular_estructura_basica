@@ -57,6 +57,30 @@
 
                 </div>
             </li>
+
+            <li class="nav-item dropdown" routerLinkActive="active">
+                <a class="nav-link dropdown-toggle pointer" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Formularios
+              </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                    <a class="dropdown-item" [routerLink]="['form_template_driven']">Template Driven</a>
+                    <a class="dropdown-item" [routerLink]="['form_reactive']">Reactive</a>
+
+
+                </div>
+            </li>
+
+            <li class="nav-item dropdown" routerLinkActive="active">
+                <a class="nav-link dropdown-toggle pointer" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Asíncronos
+              </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                    <a class="dropdown-item" [routerLink]="['observables']">Observables</a>
+                    <a class="dropdown-item" [routerLink]="['promesas']">Promesas</a>
+
+
+                </div>
+            </li>
         </ul>
 
     </div>

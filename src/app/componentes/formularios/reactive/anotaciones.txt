@@ -1,0 +1,6 @@
+1. En el form no se coloca una variable #nombrevariable como el template driven
+   sino que se da un atributo en el tag asi -formControlName="proveedor"-
+2. El form tiene el siguiente nombre de grupo -[formGroup]="presupuestoForm"-
+   y ese se declara en el TS -presupuestoForm: FormGroup;-
+3. Declaro en el init  this.onChanges(); esa funcion va a tener adentro un observable que se sujeta a los cambios
+en los valores de los text
